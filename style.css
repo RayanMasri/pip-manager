@@ -1,0 +1,56 @@
+@font-face {
+    font-family: WorkSans;
+    src: url(./assets/WorkSans-Regular.ttf);
+}
+
+* {
+    font-family: WorkSans;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#packages {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.package {
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    height: 50px;    
+    transition: 0.1s;
+}
+
+.package:hover {
+    opacity: 0.75;
+}
+
+.package:active {
+    opacity: 0.5;
+}
+
+.package-data {
+    background-color: gray;
+    padding: 5px;
+}
+
+.package-name {
+    font-size: 25px;    
+}
+
+.package-version {
+}
